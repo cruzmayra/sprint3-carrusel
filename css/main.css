@@ -1,0 +1,91 @@
+body {
+  background-color: #26A69A;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+h1 {
+  color: white;
+  font-family: 'Sacramento', cursive;
+  font-size: 3em;
+}
+
+.carousel-content {
+  margin-top: 2%;
+  display: none;
+}
+
+.carousel-content.active {
+  display: block;
+}
+
+.contenedor-carousel {
+  margin: auto;
+  width: 60%;
+  max-width: 1200px;
+  position: relative;
+}
+
+.carousel {
+  text-align: center;
+  width: auto;
+  height: auto;
+}
+
+.carousel div img {
+  width: 100%;
+  height: inherit;
+}
+
+.carousel div {
+  border: 9px solid white;
+  border-radius: 10px;
+  height: 70vh;
+}
+
+
+.controls {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.previous, .next {
+  width: 40px;
+  height: 40px;
+  background: rgba(255,255,255,0.7);
+  position: absolute;
+  top: 50%;
+  line-height: 40px;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.previous {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.controls button {
+  background: #415066;
+  border: #415066;
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+  margin: 0 4px;
+  cursor: pointer;
+}
+
+.controls button.active {
+  background: red;
+}
